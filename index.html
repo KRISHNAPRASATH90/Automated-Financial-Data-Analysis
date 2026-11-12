@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Data Analysis | Project</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #172554;
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      color: #dbeafe;
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #172554;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      background: #e9eaff;
+      color: #5435bd;
+      padding: 7px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .charts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .chart-card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+    }
+
+    .chart-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    .chart-card h3 {
+      color: #172554;
+      margin-bottom: 6px;
+    }
+
+    .chart-card p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #7139e8;
+      color: white;
+      text-decoration: none;
+      padding: 13px 25px;
+      border-radius: 8px;
+      margin: 8px 8px 0 0;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+    }
+
+    @media (max-width: 700px) {
+      .charts {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Automated Financial Data Analysis</h1>
+    <p>
+      A Python and MySQL project for cleaning, analysing
+      financial transaction data and generating visual reports.
+    </p>
+  </header>
+
+  <main class="container">
+
+    <section class="section">
+      <h2>Project Overview</h2>
+      <p>
+        Developed a financial data analysis and reporting system
+        using Python and MySQL. The project extracts data from
+        five relational database tables, performs data cleaning
+        and integration, analyses spending patterns, and generates
+        visual reports using Matplotlib.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Matplotlib</span>
+        <span class="tag">Schedule</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Data Cleaning & Analysis</h2>
+      <ul>
+        <li>Handled missing values and duplicate records.</li>
+        <li>Standardised transaction statuses and currency codes.</li>
+        <li>Validated financial data and integrated five tables.</li>
+        <li>Analysed monthly expenses and category-wise spending.</li>
+        <li>Compared top merchants and budget versus actual expenses.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Visual Analysis Reports</h2>
+      <p>Four reports generated using Python and Matplotlib.</p>
+    </section>
+
+    <div class="charts">
+
+      <div class="chart-card">
+        <img src="reports/monthly_expense_trend_20261026.png"
+             alt="Monthly Expense Trend">
+        <h3>Monthly Expense Trend</h3>
+        <p>Visual analysis of expenses across different months.</p>
+      </div>
+
+      <div class="chart-card">
+        <img src="reports/expenses_by_category_20261026.png"
+             alt="Expenses by Category">
+        <h3>Expenses by Category</h3>
+        <p>Comparison of spending across expense categories.</p>
+      </div>
+
+      <div class="chart-card">
+        <img src="reports/top_merchants_20261026.png"
+             alt="Top Merchants">
+        <h3>Top 10 Merchants</h3>
+        <p>Identifies merchants with the highest transaction spending.</p>
+      </div>
+
+      <div class="chart-card">
+        <img src="reports/budget_vs_actual_20261026.png"
+             alt="Budget vs Actual">
+        <h3>Budget vs Actual</h3>
+        <p>Compares planned monthly budgets with actual expenditure.</p>
+      </div>
+
+    </div>
+
+    <section class="section" style="margin-top:25px;">
+      <h2>Project Source Code</h2>
+      <p>
+        Explore the Python source code, SQL files and project
+        documentation on GitHub.
+      </p>
+
+      <a class="button"
+         href="https://github.com/KRISHNAPRASATH90/financial-data-analysis-automation"
+         target="_blank">
+        View GitHub Repository ↗
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    Financial Data Analysis Project | Python • MySQL • Pandas • Matplotlib
+  </footer>
+
+</body>
+</html>
